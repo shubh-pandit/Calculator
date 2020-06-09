@@ -1,0 +1,119 @@
+.title{
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 70px;
+}
+.Calculator{
+  margin: auto;
+  text-align: center;
+  
+}
+.result{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: right;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 60px 60px;
+  border:7px;
+  border-style:inset;
+  border-color: #004000;
+  border-radius: 10px;
+  margin: 10px 10px 10px 10px;
+  background-color:#005700;
+}
+.display{
+  padding: 0px 5px 0px 0px;
+  color:#02fa02;
+  
+}
+.display2{
+  padding: 0px 5px 0px 0px;
+  color:#02fa02;
+}
+.buttons{
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 0fr;
+  height: 450px;
+  width: 350px;
+  grid-gap: 0 0;
+  cursor: pointer;
+  border: 10px outset black;
+  border-radius: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #822100;
+  
+  
+}
+#backspace{
+  padding: 7px 24px;
+}
+#plusminus{
+  padding: 7px 24px;
+}
+button{
+  cursor: pointer;
+  transition: 0.3s;
+  opacity:0.8;
+  box-shadow: 2px 2px 1px #888888;
+}
+button:hover{
+  opacity: 1;
+  
+}
+.functions{
+  background-color: #52a7d1; /* Green */
+  border: 1px revert none;
+  border-radius: 15%;
+  color: white;
+  padding: 7px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+.operations{
+  background-color: #ebe8e1; 
+  border: 1px revert none;
+  border-radius: 15%;
+  color: black;
+  padding: 7px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+.no0{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.number0{
+  background-color: #eb528d; /* Green */
+  border: 1px revert none;
+  border-radius: 10%;
+  color: white;
+  padding: 7px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+.numbers{
+  background-color: #eb528d; /* Green */
+  border: 1px revert none;
+  border-radius: 15%;
+  color: white;
+  padding: 7px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+body{
+  background-image: linear-gradient(to bottom right, #717572, #282b29);
+  height: 100vh;
+}
