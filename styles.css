@@ -6,12 +6,12 @@
   text-align: center;
   margin-top: 40px;
   margin-bottom: 60px;
-  color : white;
-  font-size: 45px;
+  color : #005700;
+  font-size: 50px;
   font-weight: bolder;
   font-family: Helvetica;
-  letter-spacing: 20px;
-  -webkit-text-stroke: 2px black;
+  letter-spacing: 25px;
+  -webkit-text-stroke: 3px black;
 }
 .Calculator{
   margin: auto;
@@ -137,5 +137,5 @@ button:hover{
 }
 body{
   background-image: url('resources//bg.jpg');
-  background-size : cover;
+  height: 100vh;
 }
