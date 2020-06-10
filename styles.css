@@ -1,7 +1,17 @@
+@font-face{
+  font-family:'calci-font';
+  src: url('resources//digital-7.ttf');
+}
 .title{
   text-align: center;
-  margin-top: auto;
-  margin-bottom: 70px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  color : white;
+  font-size: 45px;
+  font-weight: bolder;
+  font-family: Helvetica;
+  letter-spacing: 20px;
+  -webkit-text-stroke: 2px black;
 }
 .Calculator{
   margin: auto;
@@ -18,18 +28,28 @@
   border:7px;
   border-style:inset;
   border-color: #004000;
-  border-radius: 10px;
-  margin: 10px 10px 10px 10px;
+  border-radius: 20px;
+  margin: 15px 10px 10px 10px;
   background-color:#005700;
+  font-family: calci-font;
+  transition:0.3s;
+  cursor:default;
+  
+}
+.result:hover{
+  background-color: #0b8519;
+  font-weight: bold;
 }
 .display{
-  padding: 0px 5px 0px 0px;
+  padding: 10px 10px 0px 0px;
   color:#02fa02;
+  font-size: 30px;
   
 }
 .display2{
-  padding: 0px 5px 0px 0px;
+  padding: 5px 14px 0px 0px;
   color:#02fa02;
+  font-size: 50px;
 }
 .buttons{
   display: inline-grid;
@@ -39,15 +59,16 @@
   width: 350px;
   grid-gap: 0 0;
   cursor: pointer;
-  border: 10px outset black;
-  border-radius: 10px;
+  border: 10px;
+  border-style: outset;
+  border-color: #3a3939;
+  border-radius: 30px;
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #822100;
-  
-  
+  background-color: black;
+
 }
 #backspace{
   padding: 7px 24px;
@@ -58,15 +79,16 @@
 button{
   cursor: pointer;
   transition: 0.3s;
-  opacity:0.8;
+  opacity:0.7;
   box-shadow: 2px 2px 1px #888888;
+  font-family: Helvetica;
 }
 button:hover{
   opacity: 1;
   
 }
 .functions{
-  background-color: #52a7d1; /* Green */
+  background-color: #52a7d1; 
   border: 1px revert none;
   border-radius: 15%;
   color: white;
@@ -81,18 +103,18 @@ button:hover{
   border: 1px revert none;
   border-radius: 15%;
   color: black;
-  padding: 7px 30px;
+  padding: 4px 28px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 25px;
 }
 .no0{
   grid-column-start: 1;
   grid-column-end: 3;
 }
 .number0{
-  background-color: #eb528d; /* Green */
+  background-color: black; 
   border: 1px revert none;
   border-radius: 10%;
   color: white;
@@ -103,7 +125,7 @@ button:hover{
   font-size: 20px;
 }
 .numbers{
-  background-color: #eb528d; /* Green */
+  background-color: black; 
   border: 1px revert none;
   border-radius: 15%;
   color: white;
@@ -114,6 +136,6 @@ button:hover{
   font-size: 20px;
 }
 body{
-  background-image: linear-gradient(to bottom right, #717572, #282b29);
-  height: 100vh;
+  background-image: url('resources//bg.jpg');
+  background-size : cover;
 }
