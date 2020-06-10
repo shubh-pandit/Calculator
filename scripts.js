@@ -273,14 +273,13 @@ function handleFunctions(value){
             calculator.waitingForDecimalFlag = false;
             calculator.decimalFlag = false;
         }
-
-        calculator.operationCompleteFlag = true;
         if(compValues(true, true, true, true)){
 
             updateDisplayBottom(operate(operation));
             updateDisplayTop('');
             calculator.operandFlag2 = false;
             calculator.operationFlag = false;
+            calculator.operationCompleteFlag = true;
             
         }
         else if((compValues(true, true, true, false))){
@@ -288,6 +287,7 @@ function handleFunctions(value){
             updateDisplayTop('');
             calculator.operandFlag2 = false;
             calculator.operationFlag = false;
+            calculator.operationCompleteFlag = true;
         }
         else if(compValues(true, false, true, true)){
             updateDisplayBottom(operate('='));
